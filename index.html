@@ -1,34 +1,159 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Geometry Dash</title>
-    <link rel="stylesheet" href="Style.css">
+<meta charset="UTF-8">
+<title>Geometry Dash Fan Page</title>
+
+<link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
 
-<header>Geometry Dash</header>
+<header>
+<h1>Geometry Dash</h1>
 
-<main>
+<nav>
+<ul>
+<li><a onclick="mostrar('inicio')">Inicio</a></li>
+<li><a onclick="mostrar('historia')">Historia</a></li>
+<li><a onclick="mostrar('como')">Cómo jugar</a></li>
+<li><a onclick="mostrar('musica')">Música</a></li>
+<li><a onclick="mostrar('niveles')">Niveles</a></li>
+<li><a onclick="mostrar('galeria')">Galería</a></li>
+</ul>
+</nav>
 
-    <section class="container">
-    <h2>Presentación General</h2>
+</header>
 
-    <p>
-        Geometry Dash es un videojuego de plataformas rítmico 
-        muy popular donde tenés que ir saltando obstáculos al 
-        ritmo de la música. Es conocido porque es muy difícil y 
-        porque la mayoría de los niveles requieren muchísima 
-        precisión y memoria.
-    </p>
+<section id="inicio" class="contenido activo">
 
-    <img src="https://www.vanas.ca/images/blog/why-the-video-game-geometry-dash-is-so-popular.jpg" alt="Imagen del juego">
-  </div>
-    </section>
-</main>
+<h2>¿Qué es Geometry Dash?</h2>
 
+<img src="img/portada.jpg" class="imagen">
 
-<footer>Geometry Dash - Benja Tizi Martin Facu Juan Fran </footer>
+<p>
+Geometry Dash es un videojuego de plataformas basado en ritmo.
+El jugador controla un cubo que debe saltar obstáculos siguiendo
+el ritmo de la música.
+</p>
+
+<p>
+El juego es conocido por su dificultad, su música electrónica
+y por permitir a los jugadores crear sus propios niveles.
+</p>
+
+</section>
+
+<section id="historia" class="contenido">
+
+<h2>Historia del juego</h2>
+
+<p>
+Geometry Dash fue creado por el desarrollador sueco
+<b>RobTop Games</b> y lanzado en el año <b>2013</b>.
+</p>
+
+<p>
+El juego comenzó siendo simple, pero con las actualizaciones
+se agregaron nuevos modos, niveles, música y un editor de niveles
+que permite a la comunidad crear millones de niveles.
+</p>
+
+</section>
+
+<section id="como" class="contenido">
+
+<h2>Cómo se juega</h2>
+
+<img src="img/gameplay.jpg" class="imagen">
+
+<ul>
+<li>El jugador controla un cubo.</li>
+<li>Debe saltar obstáculos al ritmo de la música.</li>
+<li>Si choca con algo, el nivel vuelve a empezar.</li>
+<li>Los niveles aumentan su dificultad.</li>
+</ul>
+
+</section>
+
+<section id="musica" class="contenido">
+
+<h2>Música del juego</h2>
+
+<img src="img/musica.jpg" class="imagen">
+
+<p>
+La música es una parte fundamental del juego.
+Cada nivel está sincronizado con canciones de
+música electrónica.
+</p>
+
+<p>
+Algunos artistas famosos dentro del juego son:
+</p>
+
+<ul>
+<li>DJVI</li>
+<li>Waterflame</li>
+<li>F-777</li>
+</ul>
+
+</section>
+
+<section id="niveles" class="contenido">
+
+<h2>Niveles populares</h2>
+
+<img src="img/niveles.jpg" class="imagen">
+
+<table>
+
+<tr>
+<th>Nivel</th>
+<th>Dificultad</th>
+</tr>
+
+<tr>
+<td>Stereo Madness</td>
+<td>Fácil</td>
+</tr>
+
+<tr>
+<td>Back on Track</td>
+<td>Fácil</td>
+</tr>
+
+<tr>
+<td>Electroman Adventures</td>
+<td>Medio</td>
+</tr>
+
+<tr>
+<td>Deadlocked</td>
+<td>Difícil</td>
+</tr>
+
+</table>
+
+</section>
+
+<section id="galeria" class="contenido">
+
+<h2>Galería</h2>
+
+<div class="galeria">
+
+<img src="img/portada.jpg">
+<img src="img/gameplay.jpg">
+<img src="img/musica.jpg">
+<img src="img/niveles.jpg">
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
 
 </body>
 </html>
